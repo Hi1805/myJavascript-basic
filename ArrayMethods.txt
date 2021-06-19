@@ -1,0 +1,68 @@
+//map
+function map(callback){
+	var newArray = [];
+	for(var i of this){
+		newArray.push(callback(i));
+	}
+	return newArray;
+}
+
+//find
+
+function find(callback){
+	for(var i of this){
+		if(callback(i)){
+			return i;
+		}	
+	}
+//Nếu tìm không thấy sẽ trả về undefined
+}
+
+//filter
+
+function filter(callback){
+	var newArray = [];
+	for(var i of this){
+		if(callback(i)){
+			newArray.push(i);
+		}
+	}
+	return newArray ;
+}
+
+	
+			//Reduce
+			2 Đối Số
+//Cách của Huy
+Array.prototype.reduce2 = function(callback) { // truyen 2 doi so 
+    var result = this[0];
+    for(var i = 0;i<this.length-1;i++){
+      result = callback(result,this[i+1]);
+    }
+  return result;
+};
+
+//Cách của Trung
+Array.prototype.reduce1 = function(callback){
+	if(this.length === 1){
+		return this[0];
+	}
+	else{
+		var sum = callback(this[0],this[1]);
+
+		for(i = 2; i < this.length; i++){
+			sum = callback(sum,this[i]);
+		}
+		return sum;
+	}
+}
+
+			4 đối số
+//Cách của Huy
+Array.prototype.reduce2= function(callback) { // truyen 2 doi so 
+    var result = this[0];
+    for(var i = 0;i<this.length-1; i++){
+      result = callback(result,this[i+1],(i+1),this);
+    }
+  return result;
+};

@@ -1,0 +1,15 @@
+Array.prototype.reduce1= function(callback,z) {
+	var result = (typeof z!=='undefined')? z : this[0] ;
+ 	var i= (z!== undefined)? 0 :1;
+ 	for(; i< this.length;i++){
+ 		result= callback(result,this[i]);
+ 	}
+ 	return result;
+};
+
+var a=[1,2,4,5,6];
+var b= a.reduce1(function(a,b){
+	console.log(a+'      '+b);
+	return a+b
+} );
+console.log(b);

@@ -1,0 +1,3 @@
+[submodule "javascript-basic"]
+	path = javascript-basic
+	url = https://github.com/huytruong01/javascript.git

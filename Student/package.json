@@ -1,0 +1,15 @@
+{
+  "name": "student",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Student.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "promise-fs": "^2.1.1",
+    "readline-sync": "^1.4.10"
+  }
+}

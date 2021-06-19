@@ -1,0 +1,15 @@
+{
+  "name": "bai40_node_co",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Fuction_Co.js",
+  "dependencies": {
+    "co": "^4.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

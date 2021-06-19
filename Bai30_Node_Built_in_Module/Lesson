@@ -1,0 +1,7 @@
+fs.readFileSync(path[, options])#
+path <chuỗi> | <Bộ đệm> | <URL> | <số nguyên> tên tệp hoặc mô tả tệp
+options <Đối tượng> | <chuỗi>
+
+encoding <chuỗi> | <null> Mặc định: null
+flag <chuỗi> Xem hỗ trợ của hệ thống tệpflags . Mặc định : 'r' .
+Trả về: <chuỗi> | <Bộ đệm>
